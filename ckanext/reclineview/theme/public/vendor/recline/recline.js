@@ -2567,16 +2567,16 @@ my.MapMenu = Backbone.View.extend({
         <div class="editor-field-type">  \
 			<label class="radio"> \
               <input type="radio" id="editor-field-type-lks92en" name="editor-field-type" value="lks92en" checked="checked"/> \
-              LKS92 E / N lauki</label> \
+             LKS92 X/Y lauki</label> \
 			<label class="radio"> \
               <input type="radio" id="editor-field-type-latlon" name="editor-field-type" value="latlon" /> \
-              Latitude / Longitude lauki</label> \
+              Platums(Lat)/Garums(Long) lauki</label> \
             <label class="radio"> \
               <input type="radio" id="editor-field-type-geom" name="editor-field-type" value="geom" /> \
               GeoJSON lauks</label> \
         </div> \
         <div class="editor-field-type-latlon" style="display: none;"> \
-          <label>Latitude lauks</label> \
+          <label>Platums(Lat) lauks</label> \
           <div class="input editor-lat-field"> \
             <select class="form-control"> \
             <option value=""></option> \
@@ -2585,7 +2585,7 @@ my.MapMenu = Backbone.View.extend({
             {{/fields}} \
             </select> \
           </div> \
-          <label>Longitude lauks</label> \
+          <label>Garums(Long) lauks</label> \
           <div class="input editor-lon-field"> \
             <select class="form-control"> \
             <option value=""></option> \
@@ -2596,8 +2596,8 @@ my.MapMenu = Backbone.View.extend({
           </div> \
         </div> \
 		<div class="editor-field-type-lks92en"> \
-          <label>E</label> \
-          <div class="input editor-e-field"> \
+          <label>X/N (m, ↑)</label> \
+          <div class="input editor-n-field"> \
             <select class="form-control"> \
             <option value=""></option> \
             {{#fields}} \
@@ -2605,8 +2605,8 @@ my.MapMenu = Backbone.View.extend({
             {{/fields}} \
             </select> \
           </div> \
-          <label>N</label> \
-          <div class="input editor-n-field"> \
+		  <label>Y/E (m, →)</label> \
+          <div class="input editor-e-field"> \
             <select class="form-control"> \
             <option value=""></option> \
             {{#fields}} \
